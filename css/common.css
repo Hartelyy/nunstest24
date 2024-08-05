@@ -1,0 +1,122 @@
+body {
+  font-family: "Pretendard Variable";
+  word-break: keep-all;
+  padding-top: 35px;
+  padding-bottom: 40px;
+}
+img {
+  display: block;
+}
+.page-title {
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: 580;
+  line-height: 1.3;
+  color: #000000;
+  text-align: center;
+  font-style: italic;
+  background-color: rgba(255,255,255,0.8);
+  max-width: 400px;
+  height:fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top:5px;
+  padding-bottom:5px;
+
+}
+.page-subtitle {
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  width: 240px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  border: 2.5px solid #A9BCF5;
+  border-radius: 30px;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight:500;
+  color: #A9BCF5;
+
+}
+.btn {
+  max-width: 320px;
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 35px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 33px;
+  font-style: italic;
+  line-height: 1.4;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.1s;
+}
+.btn-lightgray {
+  background-color: #D8D8D8;
+  box-shadow: 0 8px 0 #cccccc;
+  color: #000000;
+  margin-top: 400px;
+
+}
+.btn-lightgray:active {
+  box-shadow: 0 4px 0 #cccccc;
+  transform: translateY(5px);
+}
+.btn-black {
+  background-color: #000000;
+  box-shadow: 0 3px 0 #444444;
+  color: #ffffff;
+  font-weight: 450;
+}
+.btn-black:active {
+  box-shadow: 0 3px 0 #444444;
+  transform: translateY(5px);
+}
+.btn-gray {
+  background-color: #F2F4F6;
+  box-shadow: 0 8px 10 #DFE1E2;
+  color: #444444;
+}
+.btn-gray:active {
+  box-shadow: 0 4px 10 #DFE1E2;
+  transform: translateY(5px);
+}
+.btn-small {
+  max-width: 210px;
+  height: 50px;
+  margin-bottom: 30px;
+  font-size: 22px;
+}
+
+/* @media (max-width: 640px) {
+  body {
+    padding-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .page-title {
+    font-size: 45px;
+  }
+  .btn {
+    max-width: 300px;
+    height: 75px;
+    font-size: 30px;
+  }
+  .btn-small{
+    max-width: 195px;
+    height: 47px;
+    font-size:20px;
+  }
+} */

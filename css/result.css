@@ -1,0 +1,17 @@
+body{
+  background-color: #ffffff;
+}
+.result {
+  max-width: 640px;
+  width: 100%;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin-bottom: 40px;
+}
+
+/* @media (max-width: 640px) {
+  .result {
+    width: 100%;
+    height: auto; 
+  }
+} */
