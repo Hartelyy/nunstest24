@@ -52,7 +52,7 @@ export const scripts2 = [
   },
   {
     number: '04',
-    script: '"서지윤!! 왜 늦었음?!"',
+    script: '"서지윤!! 왜 늦었어?!"',
     img: '/images/2scyuri.jpg',
   },
   {
@@ -94,7 +94,7 @@ export const scripts3 = [
   },
   {
     number: '02',
-    script: '“쩔지 않음? 여기 살던 사람들<br>며칠 전에 이사가서 아무도 안 들어옴."',
+    script: '“그치! 여기 살던 사람들<br>며칠 전에 이사가서 아무도 안 들어온대."',
     img: '/images/3aziyuri.jpg',
   },
   {
@@ -104,7 +104,7 @@ export const scripts3 = [
   },
   {
     number: '04',
-    script: '“아 배고프다. 우리 뭐 시켜먹을까?<br>헐 근데 나 돈 없음…”',
+    script: '“아 배고프다. 우리 뭐 시켜먹을까?<br>헐 근데 나 돈 없다…”',
     img: '/images/3aziyuri.jpg',
   },
   {
@@ -114,7 +114,7 @@ export const scripts3 = [
   },
   {
     number: '06',
-    script: ' “하 어떡하냐 진짜…<br>아니 우리 알바 구해보실?”',
+    script: ' “하 어떡하냐 진짜…<br>아니 우리 알바 구해볼래?”',
     img: '/images/3aziyuri.jpg',
   },
   {
@@ -548,7 +548,7 @@ export const scripts16 = [
   },
   {
     number: '09',
-    script: '"많이 힘들었겠다.<br>돈은, 원래 안 되는 거지만<br>이거라도... 오늘 맛있는 거 먹고 힘내고..."',
+    script: '"많이 힘들었겠다.<br>무슨 일이 있었던 거지?"',
     img: '/images/16bench.jpg',
   },
   {
@@ -563,7 +563,7 @@ export const scripts16 = [
   },
   {
     number: '12',
-    script: '“단체 생활이 쉽지는 않겠지만,<br>선생님은 네가 너를 보살펴줄 친구들이랑<br>어른들과 지냈으면 좋겠어."',
+    script: '“단체 생활이 쉽지는 않겠지만, 선생님은 네가<br>너를 보살펴줄 친구들이랑 어른들과 지냈으면 좋겠어."',
     img: '/images/16bench.jpg',
   },
   {
