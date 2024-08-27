@@ -15,12 +15,15 @@
   border-radius: 20px;
   position: relative;
   max-width: 420px;
-  /* background: url("../images/home_kitchen.jpg") no-repeat center center; */
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+
+  width: 100vw; /* 화면 너비를 가득 채우도록 설정 */
+  height: 100vh; /* 화면 높이를 가득 채우도록 설정 */
+  background-size: contain; /* 이미지가 잘리지 않도록 비율 유지하며 맞추기 */
+  background-position: center; /* 이미지를 중앙에 배치 */
+  background-repeat: no-repeat; /* 이미지를 반복하지 않음 */
   transition: background-image 0.5s ease-in-out;
-  /* background-image: url("../"); */
+  overflow: hidden; /* 넘치는 콘텐츠 숨기기 */
+
 }
 
 
