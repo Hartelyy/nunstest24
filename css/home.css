@@ -1,6 +1,6 @@
 body {
   background-color: #F6FCFF;
-  background-image: url("../images/home.jpg");
+  background-image: url("../images/home.webp");
   background-size: contain; /* 이미지가 잘리지 않도록 비율 유지하면서 화면에 맞추기 */
   background-position: top; /* 이미지를 중앙에 배치 */
   background-repeat: no-repeat; /* 이미지를 반복하지 않음 */
