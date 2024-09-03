@@ -1,8 +1,6 @@
 body {
   font-family: "Pretendard Variable";
   word-break: keep-all;
-  padding-top: 35px;
-  padding-bottom: 40px;
 }
 img {
   display: block;
@@ -29,6 +27,7 @@ img {
   font-style: italic;
   width: 240px;
   height: 50px;
+  margin-top: 0;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;

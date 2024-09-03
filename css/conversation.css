@@ -8,17 +8,12 @@
 .question-box {
   margin-left: auto;
   margin-right: auto;
-  padding-top: 30px;
-  padding-bottom: 100px;
-  padding-left: 50px;
-  padding-right: 50px;
-  border-radius: 20px;
   position: relative;
   max-width: 420px;
 
   width: 100vw; /* 화면 너비를 가득 채우도록 설정 */
   height: 100vh; /* 화면 높이를 가득 채우도록 설정 */
-  background-size: contain; /* 이미지가 잘리지 않도록 비율 유지하며 맞추기 */
+  background-size: cover; /* 이미지가 잘리지 않도록 비율 유지하며 맞추기 */
   background-position: center; /* 이미지를 중앙에 배치 */
   background-repeat: no-repeat; /* 이미지를 반복하지 않음 */
   transition: background-image 0.5s ease-in-out;
@@ -72,7 +67,7 @@
 }
 
 .question-box .choice {
-  width: 80%; /* Adjust width as needed */ 
+  width: 80%; /* Adjust width as needed */
   height: 40px;
   /* padding: 10px; */
   padding-top: 20px;
@@ -99,7 +94,7 @@
 
 
 
-/* 
+/*
 @media (max-width: 640px) {
   .question-box {
     padding-left: 12px;
