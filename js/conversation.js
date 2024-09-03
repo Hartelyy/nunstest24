@@ -24,6 +24,12 @@ function renderQuestion() {
   numberEl.innerHTML = script.number
   imgEl.style.backgroundImage = `url(${script.img})`; //img 경로 설정
 
+  gtag('event', 'transition', {
+    'event_category': 'Button',
+    'event_label': 'Buy Now Button',
+    'value': `${currentScriptSetIndex} / ${currentNumber}`
+  });
+
   if (script.choices) {
     choice1El.style.display = 'block';
     choice2El.style.display = 'block';
