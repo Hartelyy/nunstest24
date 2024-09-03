@@ -2,7 +2,6 @@ import { scripts, scripts2, scripts3, scripts4, scripts5, scripts6, scripts8,
   scripts9, scripts10, scripts11, scripts12, scripts13, scripts14, scripts15, scripts16} from './con_data.js'
 
 // 질문 화면의 각 요소를 찾아요!
-const numberEl = document.querySelector('.number');
 const scriptEl = document.querySelector('.script');
 const choice1El = document.querySelector('.choice1')
 const choice2El = document.querySelector('.choice2')
@@ -21,7 +20,6 @@ function renderQuestion() {
   const currentScriptSet = scriptSets[currentScriptSetIndex];
   const script = currentScriptSet[currentNumber]
   scriptEl.innerHTML = script.script
-  numberEl.innerHTML = script.number
   imgEl.style.backgroundImage = `url(${script.img})`; //img 경로 설정
 
   gtag('event', 'transition', {
@@ -31,31 +29,40 @@ function renderQuestion() {
   });
 
   if (script.choices) {
-    choice1El.style.display = 'block';
-    choice2El.style.display = 'block';
+    choice1El.style.visibility = 'visible';
+    choice2El.style.visibility = 'visible';
     choice1El.innerHTML = script.choices[0].text;
     choice2El.innerHTML = script.choices[1].text;
   } else {
-    choice1El.style.display = 'none';
-    choice2El.style.display = 'none';
+    choice1El.style.visibility = 'hidden';
+    choice2El.style.visibility = 'hidden';
   }
 }
+
+let waitingTransition = false;
 
 // 다음 질문으로 넘어가는 함수
 function nextQuestion() {
   const currentScriptSet = scriptSets[currentScriptSetIndex];
 
+  if (waitingTransition) return;
+
   if (currentNumber === currentScriptSet.length - 1) {
 
     // 스크립트 세트가 끝나면 다음 스크립트 세트로 넘어감
     if (currentScriptSetIndex < scriptSets.length - 1) {
+      waitingTransition = true;
       screenblack(true);
       setTimeout(() => {
         currentScriptSetIndex++;
         currentNumber = 0;
         screenblack(false);
         renderQuestion();
-      }, 2000);
+
+        setTimeout(() => {
+          waitingTransition = false;
+        }, 1000)
+      }, 1000);
     } else {
       // 모든 스크립트 세트가 끝나면 검은 화면
       showResultPage();
@@ -72,8 +79,8 @@ function handleChoice(choiceIndex) {
 
   if (script.choices) {
     scriptEl.innerHTML = script.choices[choiceIndex].value;
-    choice1El.style.display = 'none';
-    choice2El.style.display = 'none';
+    choice1El.style.visibility = 'hidden';
+    choice2El.style.visibility = 'hidden';
   } else {
     nextQuestion();
   }
